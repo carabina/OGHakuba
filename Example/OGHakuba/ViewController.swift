@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OGHakuba
 
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -22,25 +23,24 @@ class ViewController: UIViewController {
 
         let cm1 = CustomCellModel(title: "Test cell") { [weak self] _ in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "CellTestViewController") as! CellTestViewController
-            self?.navigationController?.pushViewController(vc, animated: true)
+            let identifier = "CellTestViewController"
+            if let vc = storyboard.instantiateViewController(withIdentifier: identifier) as? CellTestViewController {
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
         }
-
 
         let cm2 = CustomCellModel(title: "Test header footer") { [weak self] _ in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "HeaderFooterTestViewController") as! HeaderFooterTestViewController
-            self?.navigationController?.pushViewController(vc, animated: true)
+            let identifier = "HeaderFooterTestViewController"
+            if let vc = storyboard.instantiateViewController(withIdentifier: identifier)
+                as? HeaderFooterTestViewController {
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
         }
 
         let topSection = Section()
 
-        hakuba
-            .reset([topSection])
-            .bump()
-
-        topSection
-            .reset([cm1, cm2])
-            .bump()
+        hakuba.reset([topSection]).bump()
+        topSection.reset([cm1, cm2]).bump()
     }
 }

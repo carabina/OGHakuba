@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OGHakuba
 
 final class CustomHeaderView: HeaderFooterView, HeaderFooterViewType {
     typealias ViewModel = CustomHeaderViewModel

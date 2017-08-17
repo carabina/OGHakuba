@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OGHakuba
 
 enum SectionIndex: Int, SectionIndexType {
     case top
@@ -26,9 +27,19 @@ class CellTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hakuba.registerCellByNib(CustomCell.self)
+        self.setupTopSection()
+        self.setupCenterSection()
 
+        delay(5) {
+            self.hakuba.move(0, to: 1).bump()
+        }
+        delay(15) {
+            self.hakuba.reset().bump()
+        }
+    }
+
+    fileprivate func setupTopSection() {
         // Top section
-
         let topCellmodels = (0..<2).map { [weak self] i -> CellModel in
             let title = "Section 0 : index \(i)"
 
@@ -37,24 +48,27 @@ class CellTestViewController: UIViewController {
                 self?.pushChildViewController()
             }
         }
-
-        hakuba
-            .reset(SectionIndex.self)
-            .bump()
+        hakuba.reset(SectionIndex.self).bump()
 
         let topSection = hakuba[SectionIndex.top]
-        let centerSection = hakuba[SectionIndex.center]
+        topSection.reset(topCellmodels).bump()
+        delay(7.5) {
+            topSection.remove(1).bump(.middle)
+        }
+        delay(10) {
+            topSection.remove(0).bump(.right)
+        }
+        delay(12.5) {
+            topSection.remove(0).bump(.right)
+        }
+    }
 
-        topSection
-            .reset(topCellmodels)
-            .bump()
-
+    fileprivate func setupCenterSection() {
         // Center section
-
+        let centerSection = hakuba[SectionIndex.center]
         let longTitle1 = "Don't have to write the code for UITableViewDelegate and UITableViewDataSource protocols"
         let longTitle2 = "Support dynamic cell height from ios7"
         let titles = ["title 1", "title 2", "title 3", "title 4", "title 5", longTitle1, longTitle2]
-
         let centerCellmodels = titles.map { [weak self] title -> CellModel in
             let data = CustomCellModel(title: "Section 1: " + title) { _ in
                 print("Did select cell with title = \(title)")
@@ -63,53 +77,19 @@ class CellTestViewController: UIViewController {
             data.dynamicHeightEnabled = true
             return data
         }
-
         delay(1.5) {
-            centerSection
-                .append(centerCellmodels)
-                .bump(.left)
+            centerSection.append(centerCellmodels).bump(.left)
         }
-
         delay(3) {
-            centerSection
-                .remove(2...4)
-                .bump(.right)
-        }
-
-        delay(5) {
-            self.hakuba
-                .move(0, to: 1)
-                .bump()
-        }
-
-        delay(7.5) {
-            topSection
-                .remove(1)
-                .bump(.middle)
-        }
-
-        delay(10) {
-            topSection
-                .remove(0)
-                .bump(.right)
-        }
-
-        delay(12.5) {
-            topSection
-                .remove(0)
-                .bump(.right)
-        }
-
-        delay(15) {
-            self.hakuba
-                .reset()
-                .bump()
+            centerSection.remove(2...4).bump(.right)
         }
     }
 
     func pushChildViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ChildViewController") as! ChildViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        let identifier = "ChildViewController"
+        if let vc = storyboard.instantiateViewController(withIdentifier: identifier) as? ChildViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

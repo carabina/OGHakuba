@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import OGHakuba
 
 final class CustomHeaderViewModel: HeaderFooterViewModel {
     let text: String
-    
+
     init(text: String) {
         self.text = text
         super.init(view: CustomHeaderView.self)

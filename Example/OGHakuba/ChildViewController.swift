@@ -8,6 +8,5 @@
 
 import UIKit
 
-class ChildViewController : UIViewController {
-    
+class ChildViewController: UIViewController {
 }

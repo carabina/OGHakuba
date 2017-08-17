@@ -199,6 +199,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				F31E997A8B8B08CE32893A8D /* [CP] Embed Pods Frameworks */,
 				615D18ECC8583762D1E835B3 /* [CP] Copy Pods Resources */,
+				696F71FC1F46346800666108 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -351,6 +352,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OGHakuba_Example/Pods-OGHakuba_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		696F71FC1F46346800666108 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		90763DAE9DC2276E767CE120 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

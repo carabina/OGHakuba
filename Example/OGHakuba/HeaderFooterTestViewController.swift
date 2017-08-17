@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OGHakuba
 
 class HeaderFooterTestViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -65,7 +66,9 @@ class HeaderFooterTestViewController: UIViewController {
 
     func pushChildViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ChildViewController") as! ChildViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        let identifier = "ChildViewController"
+        if let vc = storyboard.instantiateViewController(withIdentifier: identifier) as? ChildViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

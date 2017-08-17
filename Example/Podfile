@@ -9,9 +9,9 @@ target 'OGHakuba_Example' do
   target 'OGHakuba_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.0.0'
-    pod 'Nimble', '~> 5.1.1'
-    pod 'FBSnapshotTestCase'
-    pod 'Nimble-Snapshots'
+    pod 'Quick', '~> 1.0.0', :inhibit_warnings => true
+    pod 'Nimble', '~> 5.1.1', :inhibit_warnings => true
+    pod 'FBSnapshotTestCase', :inhibit_warnings => true
+    pod 'Nimble-Snapshots', :inhibit_warnings => true
   end
 end

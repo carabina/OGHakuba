@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import OGHakuba
 
 class CustomCellModel: CellModel {
     let title: String

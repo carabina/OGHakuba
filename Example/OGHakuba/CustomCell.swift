@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OGHakuba
 
 class CustomCell: Cell, CellType {
     typealias CellModel = CustomCellModel
