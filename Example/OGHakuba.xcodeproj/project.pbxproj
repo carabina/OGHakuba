@@ -10,11 +10,20 @@
 		027DFBCA5CB70646CC3409C0 /* Pods_OGHakuba_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B398C36FD4023B4407B86C /* Pods_OGHakuba_Tests.framework */; };
 		0B34210982551C2E7D9D9BD2 /* Pods_OGHakuba_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F964F45CB7258E8C53943D /* Pods_OGHakuba_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		696F71F11F46251E00666108 /* CellTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71E71F46251E00666108 /* CellTestViewController.swift */; };
+		696F71F21F46251E00666108 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71E81F46251E00666108 /* ChildViewController.swift */; };
+		696F71F31F46251E00666108 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71E91F46251E00666108 /* CustomCell.swift */; };
+		696F71F41F46251E00666108 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696F71EA1F46251E00666108 /* CustomCell.xib */; };
+		696F71F51F46251E00666108 /* CustomCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71EB1F46251E00666108 /* CustomCellModel.swift */; };
+		696F71F61F46251E00666108 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71EC1F46251E00666108 /* CustomHeaderView.swift */; };
+		696F71F71F46251E00666108 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696F71ED1F46251E00666108 /* CustomHeaderView.xib */; };
+		696F71F81F46251E00666108 /* CustomHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71EE1F46251E00666108 /* CustomHeaderViewModel.swift */; };
+		696F71F91F46251E00666108 /* HeaderFooterTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71EF1F46251E00666108 /* HeaderFooterTestViewController.swift */; };
+		696F71FA1F46251E00666108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F71F01F46251E00666108 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,20 +42,29 @@
 		607FACD01AFB9204008FA782 /* OGHakuba_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OGHakuba_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* OGHakuba_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OGHakuba_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		696F71E71F46251E00666108 /* CellTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTestViewController.swift; sourceTree = "<group>"; };
+		696F71E81F46251E00666108 /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		696F71E91F46251E00666108 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		696F71EA1F46251E00666108 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		696F71EB1F46251E00666108 /* CustomCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellModel.swift; sourceTree = "<group>"; };
+		696F71EC1F46251E00666108 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		696F71ED1F46251E00666108 /* CustomHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
+		696F71EE1F46251E00666108 /* CustomHeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderViewModel.swift; sourceTree = "<group>"; };
+		696F71EF1F46251E00666108 /* HeaderFooterTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFooterTestViewController.swift; sourceTree = "<group>"; };
+		696F71F01F46251E00666108 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74B398C36FD4023B4407B86C /* Pods_OGHakuba_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OGHakuba_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F964F45CB7258E8C53943D /* Pods_OGHakuba_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OGHakuba_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E60F5421E19A3ADD1983E93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8E60F5421E19A3ADD1983E93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98ADA10D76D576E47B2073B1 /* Pods-OGHakuba_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGHakuba_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OGHakuba_Example/Pods-OGHakuba_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B3157005D3AA0FF3F1625801 /* OGHakuba.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OGHakuba.podspec; path = ../OGHakuba.podspec; sourceTree = "<group>"; };
+		B3157005D3AA0FF3F1625801 /* OGHakuba.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OGHakuba.podspec; path = ../OGHakuba.podspec; sourceTree = "<group>"; };
 		DD80868F51550C8EE017378F /* Pods-OGHakuba_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGHakuba_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OGHakuba_Tests/Pods-OGHakuba_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE8A92CE8BF8F8ADA246C0C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EE8A92CE8BF8F8ADA246C0C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +132,16 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				696F71E71F46251E00666108 /* CellTestViewController.swift */,
+				696F71E81F46251E00666108 /* ChildViewController.swift */,
+				696F71E91F46251E00666108 /* CustomCell.swift */,
+				696F71EA1F46251E00666108 /* CustomCell.xib */,
+				696F71EB1F46251E00666108 /* CustomCellModel.swift */,
+				696F71EC1F46251E00666108 /* CustomHeaderView.swift */,
+				696F71ED1F46251E00666108 /* CustomHeaderView.xib */,
+				696F71EE1F46251E00666108 /* CustomHeaderViewModel.swift */,
+				696F71EF1F46251E00666108 /* HeaderFooterTestViewController.swift */,
+				696F71F01F46251E00666108 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -215,10 +242,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VGM45RH5LU;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VGM45RH5LU;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -248,8 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696F71F71F46251E00666108 /* CustomHeaderView.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				696F71F41F46251E00666108 /* CustomCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,8 +410,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				696F71F11F46251E00666108 /* CellTestViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				696F71F31F46251E00666108 /* CustomCell.swift in Sources */,
+				696F71FA1F46251E00666108 /* ViewController.swift in Sources */,
+				696F71F51F46251E00666108 /* CustomCellModel.swift in Sources */,
+				696F71F61F46251E00666108 /* CustomHeaderView.swift in Sources */,
+				696F71F81F46251E00666108 /* CustomHeaderViewModel.swift in Sources */,
+				696F71F91F46251E00666108 /* HeaderFooterTestViewController.swift in Sources */,
+				696F71F21F46251E00666108 /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -501,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -514,6 +552,7 @@
 			baseConfigurationReference = 190BCB2E98D8B49B352C9500 /* Pods-OGHakuba_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = OGHakuba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -528,6 +567,7 @@
 			baseConfigurationReference = 98ADA10D76D576E47B2073B1 /* Pods-OGHakuba_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGM45RH5LU;
 				INFOPLIST_FILE = OGHakuba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -541,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD80868F51550C8EE017378F /* Pods-OGHakuba_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = VGM45RH5LU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -561,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DF2E00CDD187835C51E4F4E /* Pods-OGHakuba_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = VGM45RH5LU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
