@@ -1,6 +1,6 @@
 # OGHakuba
 
-[![CI Status](http://img.shields.io/travis/Oleg Gorbatchev/OGHakuba.svg?style=flat)](https://travis-ci.org/Oleg Gorbatchev/OGHakuba)
+[![CI Status](https://img.shields.io/travis/Oleg%20Gorbatchev/OGHakuba.svg?style=flat)](https://travis-ci.org/gorbat-o/OGHakuba/builds)
 [![Version](https://img.shields.io/cocoapods/v/OGHakuba.svg?style=flat)](http://cocoapods.org/pods/OGHakuba)
 [![License](https://img.shields.io/cocoapods/l/OGHakuba.svg?style=flat)](http://cocoapods.org/pods/OGHakuba)
 [![Platform](https://img.shields.io/cocoapods/p/OGHakuba.svg?style=flat)](http://cocoapods.org/pods/OGHakuba)
